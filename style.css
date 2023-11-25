@@ -1,0 +1,78 @@
+* {
+    margin: 0; /* Margem*/
+    padding: 0; /* Preenchimento da margem*/
+    scroll-behavior: smooth; /* Rolagem suave*/
+}
+body{
+    background:#1c1c1c ;
+    height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fafafa;
+}
+header{
+    background: #013a33;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.pagina-inicial{
+    padding: 0 8.4rem;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+.icone{
+    font-size: 1.5rem;
+    font-weight: 800; /* negrito de 100 a 1000*/
+}
+.icone img{
+    height: 56px;
+    width: 56px;
+    object-fit: contain;
+}
+ul{
+    display: flex;
+    gap: 1.5rem;
+    list-style-type: none;
+    background: transparent;
+    overflow: hidden;
+}
+li a{
+    display: inline-block;
+    padding: .3rem e 1rem;
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: .7px;
+}
+li a:hover{
+    color: darkgreen;
+}
+.pessoal{
+    padding: 6rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+    row-gap: 2rem;
+    column-gap: 6rem;
+    align-items: center;
+}
+.pessoal h1{
+    color: aqua;
+    font-size: 4rem;
+    font-weight: 800;
+}
+.foto{
+    border-radius: 10px;
+    width: 450px;
+    border-top: 2px solid azure;
+    margin: auto;
+    overflow: hidden;
+}
+.foto img{
+    width: 100%;
+    height: auto;
+}
